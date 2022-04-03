@@ -396,7 +396,7 @@ function Library:CreateWindow(Config, Parent)
 						Toggle.Keybind.Size = UDim2.new(0,Toggle.Keybind.TextBounds.X,1,0)
 						Toggle.Title.Size = UDim2.new(1,-Toggle.Keybind.Size.X.Offset - 15,1,0)
 					end)
-
+                    
 					UserInputService.InputBegan:Connect(function(Input)
 						if WaitingForBind and Input.UserInputType == Enum.UserInputType.Keyboard then
 							local Key = tostring(Input.KeyCode):gsub("Enum.KeyCode.", "")
