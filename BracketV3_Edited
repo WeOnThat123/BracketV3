@@ -342,7 +342,7 @@ function Library:CreateWindow(Config, Parent)
 					NewToggle.Value = ToggleState -- Changed
 					Callback(State)
 				end
-                
+
 				Toggle.MouseButton1Click:Connect(function()
 					ToggleState = not ToggleState
                     NewToggle.Value = ToggleState -- Changed
@@ -412,7 +412,7 @@ function Library:CreateWindow(Config, Parent)
 							local Key = tostring(Input.KeyCode):gsub("Enum.KeyCode.", "")
 							if Key == Selected then
 								ToggleState = not ToggleState
-                                addedbullshitforkhysarth.Value = ToggleState
+                                NewToggle.Value = ToggleState
 								SetState(ToggleState)
 								if Callback then
 									Callback(Key)
